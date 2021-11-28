@@ -1,4 +1,5 @@
 <p align="center">
+  <a href="#"><img alt="undefined" src="about.jpg"></a>
   <br>
   <a href="#"><img alt="undefined" src="https://img.shields.io/github/downloads/GitSquared/edex-ui/total.svg?style=popout"></a>
   <br>
