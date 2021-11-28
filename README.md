@@ -1,7 +1,9 @@
 <p align="center">
-  <a href="#"><img alt="undefined" src="about.jpg"></a>
+  ## The library C/C++ for beginners and animation effects
   <br>
   <a href="#"><img alt="undefined" src="https://img.shields.io/github/downloads/GitSquared/edex-ui/total.svg?style=popout"></a>
+  <br>
+  <a href="#"><img alt="undefined" src="about.jpg"></a>
   <br>
   <a href="#download" target="_blank"><img alt="undefined" src="https://badgen.net/badge/Download/Windows/?color=blue&icon=windows&label"></a>
   <br>
