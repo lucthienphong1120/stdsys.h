@@ -1,5 +1,6 @@
+# The library C/C++ for beginners and animation effects
+
 <p align="center">
-  ## The library C/C++ for beginners and animation effects
   <br>
   <a href="#"><img alt="undefined" src="https://img.shields.io/github/downloads/GitSquared/edex-ui/total.svg?style=popout"></a>
   <br>
@@ -45,4 +46,4 @@ Linux
 
 ## License
 
-Licensed under the [GPLv3.0]
+Licensed [GNU]
