@@ -1,5 +1,5 @@
+# The library C/C++ about system and handle console
 <p align="center">
-  ## The library C/C++ about system and handle console
   <br>
   <a href="#"><img alt="undefined" src="about.jpg"></a>
   <br>
@@ -12,8 +12,8 @@
 
 ---
 
-<a href="https://youtu.be/BGeY1rK19zA">
-  <img align="right" width="400" alt="Demo on YouTube" src="https://youtu.be/BGeY1rK19zA">
+<a href="https://www.youtube.com/watch?v=5pH4j6daJN8">
+  <img align="right" width="400" alt="Demo on YouTube" src="https://i.ytimg.com/vi/iiFK2OYDAd0/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLABTSPK2Zd4kY2r9KjW5zCDHAISpg">
 </a>
 
 This library is free and is an open source library you can redistribute it and/or modify it.
@@ -55,6 +55,7 @@ flashing(string, time_total, color); // print string with flashing and color
 title(string); // set the console title
 ShowMousePosition(placeX, placeY); // show the mouse position at placeX, placeY
 ```
+...
 Basic functions are:
 ```c++
 swap(a, b); // swap two elements
@@ -84,12 +85,11 @@ permutation(k, n); // permutation k of n elements
 wc(string); // count the number of words in a sentence
 format(string, upper_each_first_letter); // format a string
 ```
-
 ...
 
 ## Download
 
-Download the library(https://github.com/lucthienphong1120/systemh-lib/archive/refs/heads/main.zip)
+<a href="https://github.com/lucthienphong1120/systemh-lib/archive/refs/heads/main.zip">Download the library</a>
 
 To use this library, please copy this file to the following link
 ```
