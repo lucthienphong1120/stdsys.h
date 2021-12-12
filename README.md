@@ -91,10 +91,12 @@ format(string, upper_each_first_letter); // format a string
 
 <a href="https://github.com/lucthienphong1120/systemh-lib/archive/refs/heads/main.zip">Download the library</a>
 
-To use this library, please copy this file to the following link
+To use this library, copy the 2 files system.h and basic.h to the following path
 ```
 C:\Program Files (x86)\Dev-Cpp\MinGW64\include
 ```
+
+<a href="https://www.youtube.com/watch?v=5pH4j6daJN8">Hãy xem video dưới đây</a>
 
 ## Usage
 
