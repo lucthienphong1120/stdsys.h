@@ -15,7 +15,7 @@
 // 
 // Author: LTP - copyright 2021
 //
-// to use this library, please copy this file to the following link
+// to use this library, please copy this file to the following path
 // C:\Program Files (x86)\Dev-Cpp\MinGW64\include
 // this library must be called after other library when #include
 // to avoid library conflicts and unexpected bugs occurred
