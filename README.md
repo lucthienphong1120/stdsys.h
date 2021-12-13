@@ -56,6 +56,7 @@ title(string); // set the console title
 ShowMousePosition(placeX, placeY); // show the mouse position at placeX, placeY
 ```
 ...
+
 Basic functions are:
 ```c++
 swap(a, b); // swap two elements
