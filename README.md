@@ -90,11 +90,11 @@ format(string, upper_each_first_letter); // format a string
 
 ## Download
 
-<a href="https://github.com/lucthienphong1120/systemh-lib/archive/refs/heads/main.zip">Download the library</a>
+<a href="https://github.com/lucthienphong1120/stdsys.h/archive/refs/heads/main.zip">Download the library</a>
 ```
-git clone https://github.com/lucthienphong1120/systemh-lib.git
+git clone https://github.com/lucthienphong1120/stdsys.h.git
 ```
-To use this library, copy the 2 files system.h and basic.h to the following path
+To use this library, copy the 2 files stdsys.h and basic.h to the following path
 ```
 C:\Program Files (x86)\Dev-Cpp\MinGW64\include
 ```
@@ -105,11 +105,11 @@ C:\Program Files (x86)\Dev-Cpp\MinGW64\include
 
 This library must be called after other library when include to avoid library conflicts and unexpected bugs occurred.
 ```c
-#include <system.h>
+#include <stdsys.h>
 or
 #include <basic.h>
 ```
-The <system.h> library already includes the <basic.h> library
+The <stdsys.h> library already includes the <basic.h> library
 
 ## Note
 
