@@ -20,7 +20,7 @@
 // this library must be called after other library when #include
 // to avoid library conflicts and unexpected bugs occurred
 //
-// this is a sub library of <system.h>
+// this is a sub library of <stdsys.h>
 
 
 #define _CRT_SECURE_NO_WARNINGS
