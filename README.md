@@ -13,7 +13,7 @@
 ---
 
 <a href="https://www.youtube.com/watch?v=5pH4j6daJN8">
-  <img align="right" width="400" alt="Demo on YouTube" src="https://i.ytimg.com/vi/iiFK2OYDAd0/hqdefault.jpg?sqp=-oaymwEcCPYBEIoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLABTSPK2Zd4kY2r9KjW5zCDHAISpg">
+  <img align="right" width="400" alt="Demo on YouTube" src="112.png">
 </a>
 
 This library is free and is an open source library you can redistribute it and/or modify it.
