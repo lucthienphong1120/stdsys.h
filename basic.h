@@ -29,21 +29,6 @@
 #ifndef _BASIC_H_
 #define _BASIC_H_
 
-#ifdef __cplusplus
-  /* Obsolete.  */
-# define bool unsigned char
-# define true 1
-# define false 0
-#endif /* !__cplusplus */
-/* Some compilers do not allow the use of unsigned char in bitfields.  */
-#define BOOL_BITFIELD unsigned int
-
-/* GCC older than 4.4 have broken C++ value initialization handling, see
-   PR11309, PR30111, PR33916, PR82939 and PR84405 for more details.  */
-#if GCC_VERSION > 0 && GCC_VERSION < 4004 && !defined(__clang__)
-# define BROKEN_VALUE_INITIALIZATION
-#endif
-
 /* -----------------------include librarys-------------------------------------- */
 #include <stdio.h>
 #include <iostream>
