@@ -111,6 +111,6 @@ or
 ```
 The <system.h> library already includes the <basic.h> library
 
-## License
+## Note
 
-Licensed under the [GPLv3.0]
+Because the library is under development, it is possible that some old compilers can cause errors, please use C++11 version or higher to avoid unexpected errors.
