@@ -26,13 +26,51 @@
 #define _CRT_SECURE_NO_WARNINGS
 #define _CRT_SECURE_NO_DEPRECATE
 
-#ifndef _SYSTEM_H_
-#define _SYSTEM_H_
+#ifndef _STDSYS_H_
+#define _STDSYS_H_
+
+#if __cplusplus >= 201103L
+#define STATIC_ASSERT(X) \
+  static_assert ((X), #X)
+#else
+#define STATIC_ASSERT(X) \
+  typedef int assertion1[(X) ? 1 : -1] ATTRIBUTE_UNUSED
+#endif
+
+/* Provide a fake boolean type.  We make no attempt to use the
+   C99 _Bool, as it may not be available in the bootstrap compiler,
+   and even if it is, it is liable to be buggy.
+   This must be after all inclusion of system headers, as some of
+   them will mess us up.  */
+
+#undef TRUE
+#undef FALSE
+
+#ifdef __cplusplus
+  /* Obsolete.  */
+# define bool unsigned char
+# define true 1
+# define false 0
+#endif /* !__cplusplus */
+/* Some compilers do not allow the use of unsigned char in bitfields.  */
+#define BOOL_BITFIELD unsigned int
+
+/* GCC older than 4.4 have broken C++ value initialization handling, see
+   PR11309, PR30111, PR33916, PR82939 and PR84405 for more details.  */
+#if GCC_VERSION > 0 && GCC_VERSION < 4004 && !defined(__clang__)
+# define BROKEN_VALUE_INITIALIZATION
+#endif
 
 /* -----------------------include librarys-------------------------------------- */
-#include <stdio.h>
-#include <iostream>
-#include <string>
+#ifdef HAVE_STDIO_H
+# include <stdio.h>
+#endif
+#ifdef HAVE_IOSTREAM
+# include <iostream>
+#endif
+#ifdef HAVE_STRING
+# include <string>
+#endif
 #include <windows.h>
 #include <basic.h>
 using namespace std;
