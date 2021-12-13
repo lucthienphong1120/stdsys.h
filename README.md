@@ -48,10 +48,10 @@ SetConsoleSize(width, height); // set the console size
 SetConsoleBufferSize(width, height); // set the console buffer size
 SetConsoleTitle(title); // set the console title
 DisableResize(); // disable the console resize
-DisableMenu(); // disable the console menu (minimize, maximize, close)
-DisableSelect(Minimize, Maximize, Close); // disable the console select
+DisableMenu(Minimize, Maximize, Close); // disable the console menu (minimize, maximize, close)
+DisableSelect(); // disable the console select
 print(string, time_total, color); // print string with slow motion and color
-flashing(string, time_total, color); // print string with flashing and color
+flashing(string, time_delay, time_total); // print string with flashing and color
 title(string); // set the console title
 ShowMousePosition(placeX, placeY); // show the mouse position at placeX, placeY
 ```
