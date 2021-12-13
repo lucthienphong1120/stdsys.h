@@ -199,6 +199,7 @@ void title(char title[]){
 	string command = "title " + string(title);
 	system(command.c_str());
 }
+// set the mouse position
 void SetMousePosition(short x, short y){
 	SetCursorPos(x, y);
 }
