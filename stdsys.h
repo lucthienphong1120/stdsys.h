@@ -29,23 +29,6 @@
 #ifndef _STDSYS_H_
 #define _STDSYS_H_
 
-#if __cplusplus >= 201103L
-#define STATIC_ASSERT(X) \
-  static_assert ((X), #X)
-#else
-#define STATIC_ASSERT(X) \
-  typedef int assertion1[(X) ? 1 : -1] ATTRIBUTE_UNUSED
-#endif
-
-/* Provide a fake boolean type.  We make no attempt to use the
-   C99 _Bool, as it may not be available in the bootstrap compiler,
-   and even if it is, it is liable to be buggy.
-   This must be after all inclusion of system headers, as some of
-   them will mess us up.  */
-
-#undef TRUE
-#undef FALSE
-
 #ifdef __cplusplus
   /* Obsolete.  */
 # define bool unsigned char
