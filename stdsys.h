@@ -20,7 +20,7 @@
 // this library must be called after other library when #include
 // to avoid library conflicts and unexpected bugs occurred
 //
-// this library include system library and basic library
+// this library include stdsys library and basic library
 
 #pragma once
 #define _CRT_SECURE_NO_WARNINGS
@@ -62,15 +62,9 @@
 #endif
 
 /* -----------------------include librarys-------------------------------------- */
-#ifdef HAVE_STDIO_H
-# include <stdio.h>
-#endif
-#ifdef HAVE_IOSTREAM
-# include <iostream>
-#endif
-#ifdef HAVE_STRING
-# include <string>
-#endif
+#include <stdio.h>
+#include <iostream>
+#include <string>
 #include <windows.h>
 #include <basic.h>
 using namespace std;
