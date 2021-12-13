@@ -53,6 +53,7 @@ DisableSelect(); // disable the console select
 print(string, time_total, color); // print string with slow motion and color
 flashing(string, time_delay, time_total); // print string with flashing and color
 title(string); // set the console title
+delay(seconds); // pause for a period of time
 SetMousePosition(x, y); // set the mouse position
 ShowMousePosition(placeX, placeY); // show the mouse position at placeX, placeY
 ```
