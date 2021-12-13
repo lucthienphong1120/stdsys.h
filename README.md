@@ -1,7 +1,7 @@
 # The library C/C++ about system and handle console
 <p align="center">
   <br>
-  <a href="#"><img alt="undefined" src="about.jpg"></a>
+  <a href="#"><img alt="undefined" src="img/about.JPG"></a>
   <br>
   <a href="#Download"><img alt="undefined" src="https://img.shields.io/github/downloads/GitSquared/edex-ui/total.svg?style=popout"></a>
   <a href="#" target="_blank"><img alt="undefined" src="https://badgen.net/badge/Download/Windows/?color=blue&icon=windows&label"></a>
@@ -13,7 +13,7 @@
 ---
 
 <a href="https://www.youtube.com/watch?v=5pH4j6daJN8">
-  <img align="right" width="400" alt="Demo on YouTube" src="112.png">
+  <img align="right" width="400" alt="Demo on YouTube" src="img/banner.png">
 </a>
 
 This library is free and is an open source library you can redistribute it and/or modify it.
