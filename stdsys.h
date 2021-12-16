@@ -181,7 +181,7 @@ void print(const char *s, int time_total = 0, int color = DeTextColor){
 }
 // print string with flashing and color
 void flashing(const char *s, int time_delay, int time_total){
-	int time = 0, flag = 0;
+	int time = 0, flag = DeTextColor;
 	short x = whereX(), y = whereY();
 	while(time < time_total){
 		textcolor(flag % 16);
