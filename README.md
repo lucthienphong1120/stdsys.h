@@ -12,7 +12,7 @@
 
 ---
 
-<a href="https://www.youtube.com/watch?v=5pH4j6daJN8">
+<a href="https://www.youtube.com/watch?v=RJ-Tw1pEGZw">
   <img align="right" width="400" alt="Demo on YouTube" src="img/banner.png">
 </a>
 
@@ -58,6 +58,7 @@ SetMousePosition(x, y); // set the mouse position
 ShowMousePosition(placeX, placeY); // show the mouse position at placeX, placeY
 ```
 ...
+and more other
 
 Basic functions are:
 ```c++
@@ -89,6 +90,7 @@ wc(string); // count the number of words in a sentence
 format(string, upper_each_first_letter); // format a string
 ```
 ...
+and more other
 
 ## Download
 
@@ -101,7 +103,7 @@ To use this library, copy the 2 files stdsys.h and basic.h to the following path
 C:\Program Files (x86)\Dev-Cpp\MinGW64\include
 ```
 
-<a href="https://www.youtube.com/watch?v=5pH4j6daJN8">See this video</a>
+<a href="https://www.youtube.com/watch?v=RJ-Tw1pEGZw">See this video</a>
 
 ## Usage
 
