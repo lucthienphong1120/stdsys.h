@@ -220,7 +220,32 @@ void format(char s[], bool upper_each_first_letter = true){
 		}
 	}
 }
-
+// reverse words in string
+string reverseWord(string &s){
+	int n = s.size(), j = n-1;
+	string ans = "";
+	for(int i = n-1; i >= 0; i--) {
+		if(s[i] == ' ') { 
+			for(int k = i+1; k <= j; k++) ans += s[k];
+			j = i-1;
+			ans += " ";
+		}
+		if(i == 0) {
+			for(int k = i; k <= j; k++) ans += s[k];
+		}
+	}
+	ans += '\0';
+	return ans;
+}
+// reverse string
+char* reverse(char *s){
+	return strrev(s);
+}
+// reverse string
+string reverse(string s){
+	reverse(s.begin(), s.end());
+	return s;
+}
 
 
 
