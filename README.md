@@ -87,7 +87,9 @@ sum(arr, n); // sum of array
 combination(k, n); // combination k of n elements
 permutation(k, n); // permutation k of n elements
 wc(string); // count the number of words in a sentence
+reverseWord(string); //reverse a words in string
 format(string, upper_each_first_letter); // format a string
+reverse(string);
 ```
 ...
 and more other
