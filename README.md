@@ -62,34 +62,35 @@ and more other
 
 Basic functions are:
 ```c++
-swap(a, b); // swap two elements
+swap(a, b); // swap two elements (int, char, float, double, long long)
 random(min, max); // random a number in range [min, max)
 fact(n); // factorial of n
 gcd(a, b); // greatest common divisor of a and b
 lcm(a, b); // least common multiple of a and b
 inArr(arr, n); // input Array
 outArr(arr, n); // output Array
-sort(arr, n); // merge sort Array
-afind(arr, n, value, start); // find position of the first index of element in array
-sfind(arr, n, value, start); // find position of the first index of element in string
-sdel(s, index); // delete a character in string
-adel(arr, index); // delete a element in array
-sinsert(s, index, value); // insert a character in string
-ainsert(arr, index, value); // insert an element in array
-max(a, b); // max of a and b
-max(a, b, c); // max of a, b and c
-min(a, b); // min of a and b
-min(a, b, c); // min of a, b and c
+sort(arr, n, reverse); // merge sort Array
+sort(s, reverse); // sort string alphabet
+find(arr, n, value, start); // find position of the first index of element in array
+find(arr, n, value, start); // find position of the first index of element in string
+del(s, index); // delete a character in string
+del(arr, index); // delete a element in array
+insert(s, index, value); // insert a character in string
+insert(arr, n, index, value); // insert an element in array
 abs(a); // absolute value of a
 max(arr, n); // max of array
+max(a, b); // max of a and b
+max(a, b, c); // max of a, b and c
 min(arr, n); // min of array
+min(a, b); // min of a and b
+min(a, b, c); // min of a, b and c
 sum(arr, n); // sum of array
 combination(k, n); // combination k of n elements
 permutation(k, n); // permutation k of n elements
-wc(string); // count the number of words in a sentence
-reverseWord(string); //reverse a words in string
+wordcount(string); // count the number of words in a sentence
 format(string, upper_each_first_letter); // format a string
-reverse(string);
+reverseWord(string); //reverse a words in string
+reverse(string); // reverse string
 ```
 ...
 and more other

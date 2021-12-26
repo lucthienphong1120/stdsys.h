@@ -51,6 +51,22 @@ void swap(int &a, int &b){
 	int temp = a;
 	a = b; b = temp;
 }
+void swap(char &a, char &b){
+	char temp = a;
+	a = b; b = temp;
+}
+void swap(float &a, float &b){
+	float temp = a;
+	a = b; b = temp;
+}
+void swap(double &a, double &b){
+	double temp = a;
+	a = b; b = temp;
+}
+void swap(long long &a, long long &b){
+	long long temp = a;
+	a = b; b = temp;
+}
 // random a number in range [min, max)
 int random(int min, int max){
     return min + rand() % (max - min + 1);
@@ -87,8 +103,25 @@ void sort(int a[],int n,bool reverse=false){
 		stable_sort(a,a+n);
 	}
 }
+// sort string alphabet
+void sort(char *string, bool reverse=false){
+	int n = strlen(string);
+	for(int i = 0; i < n; i++){
+		for(int j = i + 1; j < n; j++){
+			if(reverse){
+				if(string[i] < string[j]){
+					swap(string[i], string[j])
+				}
+			} else {
+				if(string[i] > string[j]){
+					swap(string[i], string[j])
+				}
+			}
+		}
+	}
+}
 // find position of the first index of element
-int sfind(char *s, int value, int start = 0){
+int find(char *s, int value, int start = 0){
 	int n = strlen(s);
 	for(int i = start; i < n; i++){
 		if(s[i] == value) return i;
@@ -96,14 +129,14 @@ int sfind(char *s, int value, int start = 0){
 	return -1;
 }
 // find position of the first index of element
-int afind(int a[], int n, int value, int start = 0){
+int find(int a[], int n, int value, int start = 0){
 	for(int i = start; i < n; i++){
 		if(a[i] == value) return i;
 	}
 	return -1;
 }
 // delete a character in string
-void sdel(char s[],int index){
+void del(char s[],int index){
 	int n = strlen(s);
 	for(int i=index;i<n;i++){
 		s[i]=s[i+1];
@@ -111,14 +144,14 @@ void sdel(char s[],int index){
 	s[n-1]='\0';
 }
 // delete a element in array
-void adel(int a[],int &n,int index){
+void del(int a[],int &n,int index){
 	for(int i=index;i<n;i++){
 		a[i]=a[i+1];
 	}
 	n--;
 }
 // insert a character in string
-void sinsert(char s[], int index, char value){
+void insert(char s[], int index, char value){
 	int n = strlen(s); n++;
 	s = (char *)malloc(sizeof(char));
 	for(int i=n-1;i>index;i--)
@@ -127,7 +160,7 @@ void sinsert(char s[], int index, char value){
 	s[n]='\0';
 }
 // insert an element in array
-void aadd(int a[],int &n,int index,int value){
+void insert(int a[],int &n,int index,int value){
 	n++;
 	for(int i=n-1;i>index;i--)
 		a[i]=a[i-1];
@@ -188,7 +221,7 @@ int permutation(int k, int n){
 	return fact(n)/fact(n-k);
 }
 // count the number of words in a sentence
-int wc(char *s){
+int wordcount(char *s){
 	int n = strlen(s), count = 0;
 	if(s[0] != ' ') count = 1;
 	for(int i = 0; i < n; i++){
@@ -199,7 +232,7 @@ int wc(char *s){
 	return count;
 }
 // format a string
-void format(char s[], bool upper_each_first_letter = true){
+void format(char *s, bool upper_each_first_letter = true){
 	while(s[0]==' ')
 		sdel(s,0);
 	while(s[strlen(s)-1]==' ')
@@ -238,15 +271,14 @@ string reverseWord(string &s){
 	return ans;
 }
 // reverse string
-char* reverse(char *s){
-	return strrev(s);
-}
-// reverse string
 string reverse(string s){
 	reverse(s.begin(), s.end());
 	return s;
 }
-
+char* reverse(char *s){
+	return strrev(s);
+}
+// next function
 
 
 
