@@ -33,6 +33,8 @@
 #include <stdio.h>
 #include <iostream>
 #include <string>
+#include <stdarg.h>
+#include <conio.h>
 #include <windows.h>
 #include <basic.h>
 using namespace std;
@@ -266,7 +268,60 @@ void ShowMousePosition(int placeX, int placeY){
         }
     }
 }
-
+// create a game menu
+void menu_up(int &key, int n){
+	int x = whereX(), y = whereY();
+	gotoxy(x-3,y); printf("   ");
+	if(key == 1){
+		gotoxy(x-3,y+n-1); key = n;
+	}
+	else {
+		gotoxy(x-3,y-1); key--;
+	}
+	printf("-->");
+}
+void menu_down(int &key, int n){
+	int x = whereX(), y = whereY();
+	gotoxy(x-3,y); printf("   ");
+	if(key == n){
+		gotoxy(x-3,y-n+1); key = 1;
+	}
+	else {
+		gotoxy(x-3,y+1); key++;
+	}
+	printf("-->");
+}
+void menu(int &key, char *title, int number_of_choice, ...){
+	int x = whereX(), y = whereY();
+	va_list item;
+	va_start(item, number_of_choice);
+	printf("_____________________________________\n");
+	printf("|             %-10s            |\n",title);
+	printf("|                                   |\n");
+	for(int i = 1; i <= number_of_choice; i++){
+		printf("|        %2d. %-15s        |\n", i, va_arg(item, char*));
+	}
+	printf("|___________________________________|\n");
+    va_end(item);
+	while(1){
+		gotoxy(5,2+key); printf("-->");
+		char c = getch();
+		if(c == -32){
+			c = getch();
+			switch(c){
+				case 72:
+					menu_up(key, number_of_choice);
+					break;
+				case 80:
+					menu_down(key, number_of_choice);
+					break;
+			}
+		}
+		else if (c == 13) break;
+    }
+    clear;
+}
+// next function
 
 
 

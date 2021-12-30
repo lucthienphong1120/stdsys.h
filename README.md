@@ -56,6 +56,7 @@ title(string); // set the console title
 delay(seconds); // pause for a period of time
 SetMousePosition(x, y); // set the mouse position
 ShowMousePosition(placeX, placeY); // show the mouse position at placeX, placeY
+Menu(&key, title, number_of_choice, choice1, choice2, choice ...) // create a game menu
 ```
 ...
 and more other
