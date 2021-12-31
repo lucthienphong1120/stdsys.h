@@ -1,5 +1,5 @@
 # The library C/C++ about system and handle console
-<p align="center">
+<p text-align="center">
   <br>
   <a href="#"><img alt="undefined" src="img/about.JPG"></a>
   <br>
@@ -13,7 +13,7 @@
 ---
 
 <a href="https://www.youtube.com/watch?v=RJ-Tw1pEGZw">
-  <img align="right" width="400" alt="Demo on YouTube" src="img/banner.png">
+  <img text-align="right" width="400" alt="Demo on YouTube" src="img/banner.png">
 </a>
 
 This library is free and is an open source library you can redistribute it and/or modify it.
@@ -36,12 +36,17 @@ fast; // fast Input/Output
 clear; // clear the console
 pause; // pause the console (press any key to continue . . .)
 exit; // exit the program
+
 gotoxy(x, y); // move the cursor to x, y
 textcolor(color); // set the text color
 bgcolor(text_color, background_color); // set the background color
 linecolor(text_color, line_color); // set the line color
+
 whereX(); // get current cursor position in x axis
 whereY(); // get current cursor position in y axis
+WhereMouseX(); // get current mouse position in x axis
+WhereMouseY(); // get current mouse position in y axis
+
 cursor(visible); // set cursor visible or not
 Scrollbar(visible); // set scrollbar visible or not
 SetConsoleSize(width, height); // set the console size
@@ -50,6 +55,7 @@ SetConsoleTitle(title); // set the console title
 DisableResize(); // disable the console resize
 DisableMenu(Minimize, Maximize, Close); // disable the console menu (minimize, maximize, close)
 DisableSelect(); // disable the console select
+
 print(string, time_total, color); // print string with slow motion and color
 flashing(string, time_delay, time_total); // print string with flashing and color
 title(string); // set the console title
@@ -70,6 +76,7 @@ gcd(a, b); // greatest common divisor of a and b
 lcm(a, b); // least common multiple of a and b
 inArr(arr, n); // input Array
 outArr(arr, n); // output Array
+
 sort(arr, n, reverse); // merge sort Array
 sort(s, reverse); // sort string alphabet
 find(arr, n, value, start); // find position of the first index of element in array
@@ -78,6 +85,7 @@ del(s, index); // delete a character in string
 del(arr, index); // delete a element in array
 insert(s, index, value); // insert a character in string
 insert(arr, n, index, value); // insert an element in array
+
 abs(a); // absolute value of a
 max(arr, n); // max of array
 max(a, b); // max of a and b
@@ -86,6 +94,7 @@ min(arr, n); // min of array
 min(a, b); // min of a and b
 min(a, b, c); // min of a, b and c
 sum(arr, n); // sum of array
+
 combination(k, n); // combination k of n elements
 permutation(k, n); // permutation k of n elements
 wordcount(string); // count the number of words in a sentence
@@ -112,12 +121,24 @@ C:\Program Files (x86)\Dev-Cpp\MinGW64\include
 ## Usage
 
 This library must be called after other library when include to avoid library conflicts and unexpected bugs occurred.
-```c
+```c++
 #include <stdsys.h>
 or
 #include <basic.h>
 ```
 The <stdsys.h> library already includes the <basic.h> library
+
+## Example
+
+```c++
+#include <stdsys.h>
+
+int main(){
+    flashing("You are using stdsys.h library", 100, 10000);
+    pause;
+    return 0;
+}
+```
 
 ## Note
 

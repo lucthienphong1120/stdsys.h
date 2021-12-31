@@ -112,6 +112,16 @@ int whereY() {
 	GetConsoleScreenBufferInfo(GetStdHandle(STD_OUTPUT_HANDLE), &y);
 	return y.dwCursorPosition.Y;
 }
+// get current mouse position in x axis
+int WhereMouseX(){
+	POINT mouse;
+	if(GetCursorPos(&mouse)) return mouse.x;
+}
+// get current mouse position in y axis
+int WhereMouseY(){
+	POINT mouse;
+	if(GetCursorPos(&mouse)) return mouse.y;
+}
 //set cursor visible or not
 void cursor(bool show = true) {
 	//true is show (default), false is hide
