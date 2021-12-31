@@ -1,5 +1,5 @@
 # The library C/C++ about system and handle console
-<p text-align="center">
+<p align="center">
   <br>
   <a href="#"><img alt="undefined" src="img/about.JPG"></a>
   <br>
@@ -13,7 +13,7 @@
 ---
 
 <a href="https://www.youtube.com/watch?v=RJ-Tw1pEGZw">
-  <img text-align="right" width="400" alt="Demo on YouTube" src="img/banner.png">
+  <img align="right" width="400" alt="Demo on YouTube" src="img/banner.png">
 </a>
 
 This library is free and is an open source library you can redistribute it and/or modify it.
