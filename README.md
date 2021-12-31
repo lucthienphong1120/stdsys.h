@@ -130,14 +130,9 @@ The <stdsys.h> library already includes the <basic.h> library
 
 ## Example
 
-```c++
-#include <stdsys.h>
-
-int main(){
-    flashing("You are using stdsys.h library", 100, 10000);
-    pause;
-    return 0;
-}
+```
+g++ demo.cpp -o demo.exe
+.\demo.exe
 ```
 
 ## Note
