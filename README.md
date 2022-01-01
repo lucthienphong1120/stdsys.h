@@ -114,7 +114,7 @@ git clone https://github.com/lucthienphong1120/stdsys.h.git
 ### Set up
 
 To use this library, you must right click and run the setup.exe with administrator to automatic setup
-<p><img alt="open" src="img/open.png"></p>
+<p align="center"><img alt="open" src="img/open.png"></p>
 <p align="center"><img alt="setup" src="img/setup.png"></p>
 
 Or you can manually copy 2 files stdsys.h and basic.h to the following path
