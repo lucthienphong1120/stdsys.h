@@ -11,7 +11,6 @@
 </p>
 
 ---
-
 <a href="https://www.youtube.com/watch?v=RJ-Tw1pEGZw">
   <img align="right" width="400" alt="Demo on YouTube" src="img/banner.png">
 </a>
@@ -24,7 +23,6 @@ This library is distributed in the hope that it will be useful, and bring conven
 The main features are functions for handling console, system, animation and basic useful functions for programmers.
 
 ---
-
 ## Some functions
 
 Some functions are:
@@ -105,19 +103,26 @@ reverse(string); // reverse string
 ...
 and more other
 
+---
 ## Download
 
-<a href="https://github.com/lucthienphong1120/stdsys.h/archive/refs/heads/main.zip">Download the library</a>
+You can click <a href="https://github.com/lucthienphong1120/stdsys.h/archive/refs/heads/main.zip">Download the library</a> or using Git
 ```
 git clone https://github.com/lucthienphong1120/stdsys.h.git
 ```
-To use this library, copy the 2 files stdsys.h and basic.h to the following path
+---
+### Set up
+
+To use this library, you must right click and run the setup.exe with administrator to automatic setup
+
+Or you can manually copy 2 files stdsys.h and basic.h to the following path
 ```
 C:\Program Files (x86)\Dev-Cpp\MinGW64\include
 ```
 
 <a href="https://www.youtube.com/watch?v=RJ-Tw1pEGZw">See this video</a>
 
+---
 ## Usage
 
 This library must be called after other library when include to avoid library conflicts and unexpected bugs occurred.
@@ -128,6 +133,7 @@ or
 ```
 The <stdsys.h> library already includes the <basic.h> library
 
+---
 ## Example
 
 ```
@@ -135,6 +141,7 @@ g++ demo.cpp -o demo.exe
 .\demo.exe
 ```
 
+---
 ## Note
 
 Because the library is under development, it is possible that some old compilers can cause errors, please use C++11 version or higher to avoid unexpected errors.
