@@ -128,7 +128,7 @@ C:\Program Files (x86)\Dev-Cpp\MinGW64\include
 This library must be called after other library when include to avoid library conflicts and unexpected bugs occurred.
 ```c++
 #include <stdsys.h>
-or
+// or
 #include <basic.h>
 ```
 The <stdsys.h> library already includes the <basic.h> library
