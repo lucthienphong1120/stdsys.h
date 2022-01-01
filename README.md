@@ -1,7 +1,7 @@
 # The library C/C++ about system and handle console
 <p align="center">
   <br>
-  <a href="#"><img alt="undefined" src="img/about.JPG"></a>
+  <a href="#"><img alt="about" src="img/about.JPG"></a>
   <br>
   <a href="#Download"><img alt="undefined" src="https://img.shields.io/github/downloads/GitSquared/edex-ui/total.svg?style=popout"></a>
   <a href="#" target="_blank"><img alt="undefined" src="https://badgen.net/badge/Download/Windows/?color=blue&icon=windows&label"></a>
@@ -114,6 +114,7 @@ git clone https://github.com/lucthienphong1120/stdsys.h.git
 ### Set up
 
 To use this library, you must right click and run the setup.exe with administrator to automatic setup
+<p align="center"><img alt="setup" src="img/setup.png"></p>
 
 Or you can manually copy 2 files stdsys.h and basic.h to the following path
 ```
