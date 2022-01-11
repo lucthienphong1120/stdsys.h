@@ -110,11 +110,11 @@ void sort(char *string, bool reverse=false){
 		for(int j = i + 1; j < n; j++){
 			if(reverse){
 				if(string[i] < string[j]){
-					swap(string[i], string[j])
+					swap(string[i], string[j]);
 				}
 			} else {
 				if(string[i] > string[j]){
-					swap(string[i], string[j])
+					swap(string[i], string[j]);
 				}
 			}
 		}
@@ -234,13 +234,13 @@ int wordcount(char *s){
 // format a string
 void format(char *s, bool upper_each_first_letter = true){
 	while(s[0]==' ')
-		sdel(s,0);
+		del(s,0);
 	while(s[strlen(s)-1]==' ')
-		sdel(s,strlen(s)-1);
+		del(s,strlen(s)-1);
 	strupr(s);
 	for(int i=1;i<strlen(s);i++){
 		while(s[i]==' '&&s[i+1]==' '){
-			sdel(s,i);
+			del(s,i);
 			i--;
 		}
 		if(upper_each_first_letter){
