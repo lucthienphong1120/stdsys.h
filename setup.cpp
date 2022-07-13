@@ -47,8 +47,7 @@ void check(char* path, char* name){
 		printf("with administrator permission");
 	}
 }
-//	copy basic.h "C:\Program Files (x86)\Dev-Cpp\MinGW64\include" /Y
-//	copy stdsys.h "C:\Program Files (x86)\Dev-Cpp\MinGW64\include" /Y
+
 int main(){
 	SetConsoleSize(80,25);
 	gotoxy(22, 5);
@@ -61,17 +60,6 @@ int main(){
 	system("timeout 5 /nobreak");
 	system("cls");
 	textcolor(9);
-	if(access( "C:\\Program Files (x86)\\Dev-Cpp\\MinGW64\\include\\basic.h", F_OK) != -1 ) {
-		gotoxy(20, 5);
-	    printf("Copy basic.h successful");
-	} else {
-		gotoxy(22, 5);
-	    printf("Copy failed!");
-	    gotoxy(12, 6);
-		printf("Please right click and run this file");
-		gotoxy(15, 7);
-		printf("with administrator permission");
-	}
 	check("C:\\Program Files (x86)\\Dev-Cpp\\MinGW64\\include\\basic.h", "basic.h");
 	getch();
 	check("C:\\Program Files (x86)\\Dev-Cpp\\MinGW64\\include\\stdsys.h", "stdsys.h");
