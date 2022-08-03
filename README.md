@@ -6,7 +6,7 @@
   <a href="#Download"><img alt="undefined" src="https://img.shields.io/github/downloads/GitSquared/edex-ui/total.svg?style=popout"></a>
   <a href="#" target="_blank"><img alt="undefined" src="https://badgen.net/badge/Download/Windows/?color=blue&icon=windows&label"></a>
   <br>
-  <a href="#"><strong><i>Copyright (C) 2021 Coding Reshape Future Inc.</i></strong></a>
+  <a href="#"><strong><i>Copyright (C) 2021 Coding Reshape Future Co. LTD</i></strong></a>
   <br><br><br>
 </p>
 
