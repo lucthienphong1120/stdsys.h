@@ -43,7 +43,7 @@ using namespace std;
 #define DarkBlue		1
 #define DarkGreen		2
 #define Cyan			3
-#define Red				4
+#define Red			4
 #define Purple			5
 #define DarkYellow		6
 #define Sliver			7
