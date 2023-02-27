@@ -1,4 +1,4 @@
-# The library C/C++ about system and handle console
+# The C/C++ library about system and handle console
 <p align="center">
   <br>
   <a href="#"><img alt="about" src="img/about.JPG"></a>
